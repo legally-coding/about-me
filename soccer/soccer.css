@@ -1,0 +1,146 @@
+html{
+    min-height:100%;
+    position:relative;
+}
+
+body{
+    --main-carousel-pos: 0;
+    background-color: #e6fafa;
+    color: #9479e6;
+    font-family:Arial;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    margin:0;
+    height:100%;
+}
+
+.cards-container, .card-overlay{
+    padding:10px;
+    height:150px;
+    width:300px;
+    border:solid 2px;
+    position:absolute;
+    cursor:ew-resize;
+    right:10%;
+}
+
+.cards-container{
+    border-radius:5px;
+    display:flex;
+    gap:10px;
+    user-select: none;
+    cursor:pointer;
+    overflow: hidden;
+    z-index:10;
+    border-color: cyan;
+}
+
+.card-overlay{
+    border-color:#00000000;
+    z-index:15;
+}
+
+.card{
+    height:145px;
+    width:85px;
+    position:absolute;
+    z-index:5;
+}
+
+.card>img{
+    height:180px;
+    width:110px;
+    position:relative;
+    bottom:13px;
+    right:8px;
+}
+
+#card1{
+    left:-100px;
+    opacity:min(1, calc(1.4 - (sqrt(pow(var(--card-0-pos) - 0.5, 2)))*3));
+    transform:scale(min(1, calc(1.2 - (sqrt(pow(var(--card-0-pos) - 0.5, 2)))*1.2)));
+}
+
+#card2{
+    left:5px;
+    opacity:min(1, calc(1.4 - (sqrt(pow(var(--card-1-pos) - 0.5, 2)))*3));
+    transform:scale(min(1, calc(1.2 - (sqrt(pow(var(--card-1-pos) - 0.5, 2)))*1.2)));
+}
+
+#card3{
+    left:110px;
+    opacity:min(1, calc(1.4 - (sqrt(pow(var(--card-2-pos) - 0.5, 2)))*3));
+    transform:scale(min(1, calc(1.2 - (sqrt(pow(var(--card-2-pos) - 0.5, 2)))*1.2)));
+}
+
+
+#card4{
+    left:215px;
+    opacity:min(1, calc(1.4 - (sqrt(pow(var(--card-3-pos) - 0.5, 2)))*3));
+    transform:scale(min(1, calc(1.2 - (sqrt(pow(var(--card-3-pos) - 0.5, 2)))*1.2)));
+}
+
+#card5{
+    left:320px;
+    opacity:min(1, calc(1.4 - (sqrt(pow(var(--card-4-pos) - 0.5, 2)))*3));
+    transform:scale(min(1, calc(1.2 - (sqrt(pow(var(--card-4-pos) - 0.5, 2)))*1.2)));
+}
+
+
+h1{
+    text-align:center;
+}
+
+h2{
+    text-align:center;
+}
+
+p{
+    text-align:center;
+    width:100%;
+    font-size:18px;
+}
+
+
+.teams-container{
+    display:inline-flex;
+    gap:50px;
+}
+
+.teams{
+    display:grid;
+    width:fit-content;
+    height:auto;
+    grid-template-columns: repeat(3, 100px);
+    padding:10px;
+}
+
+.team{
+    height:100px;
+    width:auto;
+    justify-self:center;
+    transition: transform 0.5s;
+    transform:scale(1);
+    z-index:2;
+}
+
+.team:hover{
+    transform:scale(1.1);
+    z-index:10;
+}
+
+#boca, #barcelona{
+    position:relative;
+    left:50%;
+}
+
+.team-info{
+    border:#9479e6 2px;
+}
+
+.players{
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items:center;
+}
+

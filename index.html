@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sidebar.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="blur-overlay"></div>
+
+        <div class="sidebar sidebar-hidden" style="display:none;">
+            <div class="sidebar-grid">
+                <div class="no-hover">home</div>
+                <a href="./soccer/index.html">
+                    <div class="hover-sidebar">soccer</div>
+                </a>
+                <a href="./geography/index.html">
+                    <div class="hover-sidebar">geography</div>
+                </a>
+                <a href="./brawlstars/index.html">
+                    <div class="hover-sidebar">brawl stars</div>
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="header">
+            <div class="menu-select">
+                <!--<img src="./menu.svg" height="40" /> <-->
+                <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="5%">
+                        <animate class="nav-animate-top-middle" attributeName="y" values="5%;42.5%;" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                        <animate class="nav-animate-top-back" attributeName="y" values="42.5%;5%" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                    </rect>
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="42.5%">
+                    </rect>
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="80%">
+                        <animate class="nav-animate-bottom-middle" attributeName="y" values="80%;42.5%;" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                        <animate class="nav-animate-bottom-back" attributeName="y" values="42.5%;80%" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                    </rect>
+                </svg>
+            </div>
+
+            <div class="title-container">
+                <h1>Home</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+        <h2>Go check out my pages:</h2>
+
+
+        <ul>
+            <li><a href="./soccer/index.html">Soccer</a></li>
+            <li><a href="./geography/index.html">Geography</a></li>
+            <li><a href="./brawlstars/index.html">Brawl Stars</a></li>
+        </ul>
+    </div>
+
+    <script src="animations.js"></script>
+
+</body>
+
+</html>

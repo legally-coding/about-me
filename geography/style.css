@@ -1,0 +1,103 @@
+body {
+    background-color: #e6fafa;
+    color: #9479e6;
+    font-family: Arial;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    margin: 0;
+}
+
+.main-content{
+    height:100%;
+}
+
+.geography-title{
+    position:relative;
+    top:10px;
+    width:100%;
+    text-align:center;
+    font-size:150px;
+    font-family:'Playfair', italic;
+    font-size:bold;
+    display:inline-block;
+}
+
+.geography-title>span{
+    position: relative;
+    display:inline-block;
+    height:100px;
+    width:110px;
+    top:40px;
+}
+
+
+.loading-overlay{
+    height:calc(100vh - 100px);
+    width:100%;
+    background-color:#CBCBCB;
+    z-index:10;
+    position:absolute;
+}
+.loading-overlay>div{
+    position:absolute;
+    top:200px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:black;
+    font-size:20px;
+}
+
+.hide-overlay{
+    animation: hide-overlay;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+
+#bg{
+    position:relative;
+    transform:rotate(15deg);
+    bottom:25px;
+}
+
+
+@font-face {
+    font-family: Playfair;
+    src: url(./Playfair_9pt-ExtraBold.ttf);
+}
+
+
+@keyframes hide-overlay{
+    0%{
+        opacity:1;
+        display:block;
+    }
+
+    99%{
+        opacity:0;
+    }
+    
+    100%{
+        opacity:0;
+        display:none;
+    }
+}
+
+p{
+    width:100%;
+    text-align:center;
+    font-size:18px;
+}
+
+
+.geoguessr{
+    display:grid;
+    grid-template-columns:40% 60%;
+    padding:10px;
+}
+
+.geoguessr>img{
+    width:80%;
+    justify-self:center;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer</title>
+    <link rel="stylesheet" href="soccer.css">
+    <link rel="stylesheet" href="../sidebar.css">
+</head>
+
+<body>
+    
+
+    <div class="content">
+
+        <div class="blur-overlay"></div>
+
+        <div class="sidebar sidebar-hidden" style="display:none;">
+            <div class="sidebar-grid">
+                <a href="../index.html"><div class="hover-sidebar">home</div></a>
+                <div class="no-hover">soccer</div>
+                <a href="../geography/index.html"><div class="hover-sidebar">geography</div></a>
+                <a href="../brawlstars/index.html"><div class="hover-sidebar">brawl stars</div></a>
+
+            </div>
+        </div>
+
+
+        <div class="header">
+            <div class="menu-select">
+                <!--<img src="./menu.svg" height="40" /> <-->
+                <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="5%">
+                        <animate class="nav-animate-top-middle" attributeName="y" values="5%;42.5%;" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                        <animate class="nav-animate-top-back" attributeName="y" values="42.5%;5%" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                    </rect>
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="42.5%">
+                    </rect>
+                    <rect width="100%" height="15%" fill="green" rx="10%" y="80%">
+                        <animate class="nav-animate-bottom-middle" attributeName="y" values="80%;42.5%;" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                        <animate class="nav-animate-bottom-back" attributeName="y" values="42.5%;80%" dur="1s"
+                            calcMode="spline" fill="freeze" keySplines="0 0 0.1 1" repeatCount="1" begin="indefinite" />
+                    </rect>
+                </svg>
+            </div>
+
+            <div class="title-container">
+                <h1>Soccer</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+
+    <p>
+        Another one of my interests include soccer. I watch it all the time with friends, family, neighbors, and even
+        strangers. It's an easy sport to get into, and lots of fun to play for a team or just for fun!
+    </p>
+
+    <br>
+    <h2>Variety of Teams</h2>
+
+    <p>
+        I watch many teams from across the globe, each for their own particular reason.
+        Hover over each team to learn more about where they're from and why I watch them!
+    </p>
+
+
+
+    <div class="teams-container">
+        <div class="teams">
+            <img class="team" id="sounders" src="images/Sounders.png">
+            <img class="team" id="ballard" src="images/Ballard.png">
+            <img class="team" id="chelsea" src="images/Chelsea.png">
+            <img class="team" id="barcelona" src="images/Barcelona.png">
+            <img class="team" id="boca" src="images/Boca.png">
+        </div>
+        <div class="team-info">
+            <p id="info-box"></p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Favorite Players</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="players">
+        <p>I also have many favorite players! Scroll through this list and see if you recognize any
+            of the names</p>
+            <div class="cards-container">
+
+                <div class="card" id="card1"><img src="images/Cavani.png"></div>
+        
+                <div class="card" id="card2"><img src="images/Griezmann.png"></div>
+        
+                <div class="card" id="card3"><img src="images/Kaka.png"></div>
+        
+                <div class="card" id="card4"><img src="images/Messi.png"></div>
+        
+                <div class="card" id="card5"><img src="images/Nouhou.png"></div>
+        
+            </div>
+        <div class="card-overlay"></div>
+    </div>
+
+    <br>
+    <br>
+
+</div>
+
+
+    <script src="soccer.js"></script>
+    <script src="animations.js"></script>
+
+</body>
+
+</html>
